@@ -17,7 +17,7 @@ if (
 
 require_once "connexion_db.php"; // on appelle la base de données
 
-$requette = " INSERT INTO `users`
+$user_query = " INSERT INTO users
  (`id`, `name`, `LASTNAME`, `birthdate`, `fav`, `email`, `password`)
  VALUES
  (NULL, :nom, :lastname, :birthdate, :fav, :email, :password)
@@ -27,13 +27,13 @@ $requette = " INSERT INTO `users`
 //* type="text" appelés via les variables ci dessous
 
 
-$stmt = $conn->prepare($requette);
-$stmt->bindValue(':nom', $_POST[name]);
-$stmt->bindValue(':lastname', $_POST[lastname]);
-$stmt->bindValue(':birthdate', $_POST[birthdate]);
-$stmt->bindValue(':fav', $_POST[fav]);
-$stmt->bindValue(':email', $_POST[email]);
-$stmt->bindValue(':password', $_POST[password]);
+$stmt = $conn->prepare($user_query);
+$stmt->bindValue(':nom', $_POST['name']);
+$stmt->bindValue(':lastname', $_POST['lastname']);
+$stmt->bindValue(':birthdate', $_POST['birthdate']);
+$stmt->bindValue(':fav', $_POST['fav']);
+$stmt->bindValue(':email', $_POST['email']);
+$stmt->bindValue(':password', $_POST['password']);
 $stmt->execute();
 
 
