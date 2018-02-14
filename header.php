@@ -3,7 +3,7 @@
 require_once "connexion_db.php";
 
 ?>
-<header>
+<header class="header">
    <nav class="wrapper">
       <p class="logo"><span class="light">My</span>Sport</p>
       <input class="style-button-search" type="text" name="pseudo" id="pseudo" placeholder="Search"/>

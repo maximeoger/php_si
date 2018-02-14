@@ -56,12 +56,13 @@ hr {background-color: #A9A9A9; height: 1px; border: 0px;}
 }
 
 /*---------------------------------------------------------------------------*/
-header {
-   height: 70px;
+.header {
    width: 100vw;
    background-color: #4F8033;
    line-height: 70px;
    color: white;
+   position: fixed;
+   z-index:999;
 }
 
 nav {
@@ -86,7 +87,7 @@ nav {
 .post-content {
    color: #111213;
    font-size: 25px;
-   margin-top: 30px;
+   padding-top: 150px;
    position: relative;
 }
 .element-input-article {

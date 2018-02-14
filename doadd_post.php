@@ -1,37 +1,28 @@
 <?php
-/*
+
 // d'abbord, on teste si les champs obligatoires ne sont pas existant if( !isset ) signifie : non égal à isset . si c'est le cas , il ajoute l'utilisateur à la bdd sinon il renvoie une erreur
 
 if (
-    !isset($_POST['name']) ||
-    !isset($_POST['lastname']) ||
-    !isset($_POST['birthdate']) ||
-    !isset($_POST['fav']) ||
-    !isset($POST['email']) ||
-    !isset($_POST['password']) ||
-) {
+    !isset($_POST['status'])
+
+){
     header('Location: index.php?nopostdata');
     exit;
 }
 
 require_once "connexion_db.php";
 
-$requette = " INSERT INTO `users`
- (`id`, `name`, `LASTNAME`, `birthdate`, `fav`, `email`, `password`)
+$requette = " INSERT INTO `post`
+ (`id`, `content`)
  VALUES
- (NULL, :nom, :lastname, :birthdate, :fav, :email, :password)
+ (NULL, :content)
 ;";
 
 
 
-$stmt = $conn->preprare($requette);
-$stmt->bindValue(':nom', '$_POST[name]');
-$stmt->bindValue(':lastname', '$_POST[lastname]');
-$stmt->bindValue(':birthdate', '$_POST[birthdate]');
-$stmt->bindValue(':fav', '$_POST[fav]');
-$stmt->bindValue(':email', '$_POST[email]');
-$stmt->bindValue(':password', '$_POST[password]');
+$stmt = $conn->prepare($requette);
+$stmt->bindValue(':content', $_POST[status]);
 $stmt->execute();
 
 
-header('Location: details.php?id='.$conn->lastInsertId());
+header('Location: index.php?id='.$conn->lastInsertId());
