@@ -1,28 +1,28 @@
 <?php
 
-// d'abbord, on teste si les champs obligatoires ne sont pas existant if( !isset ) signifie : non égal à isset . si c'est le cas , il ajoute l'utilisateur à la bdd sinon il renvoie une erreur
-
-if (
-    !isset($_POST['status'])
-
-){
-    header('Location: index.php?nopostdata');
-    exit;
-}
-
 require_once "connexion_db.php";
 
-$requette = " INSERT INTO `post`
- (`id`, `content`)
- VALUES
- (NULL, :content)
-;";
+if (empty($_POST['content']) )
+{
 
+    var_dump($_POST['content']);
+    exit;
 
+}
 
-$stmt = $conn->prepare($requette);
-$stmt->bindValue(':content', $_POST[status]);
+$post_query = " 
+  INSERT INTO 
+    `post`
+  (`id`, `content`) 
+  VALUES 
+  (NULL, :content)
+  ;";
+
+$stmt = $conn->prepare($post_query);
+$stmt->bindValue(':content', $_POST['content']);
 $stmt->execute();
 
 
 header('Location: index.php?id='.$conn->lastInsertId());
+
+

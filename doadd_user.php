@@ -13,6 +13,7 @@ require_once "connexion_db.php"; // on appelle la base de données
 
 $requette = " INSERT INTO `users`
  (`name`, `LASTNAME`, `birthdate`, `fav`, `email`, `password`)
+
  VALUES
  (:nom, :lastname, :birthdate, :fav, :email, :password)
 ;";
