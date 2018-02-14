@@ -22,7 +22,7 @@ require_once "connexion_db.php";
             <p>
                <input class="style-button" type="text" name="name" id="pseudo" placeholder="Prénom"/>
                <input class="style-button" type="text" name="lastname" id="pseudo" placeholder="Nom"/>
-               <input class="style-button" type="text" name="birthdate" id="pseudo" placeholder="Age"/>
+               <input class="style-button" type="text" name="birthdate" id="pseudo" placeholder="YY/MM/DD"/>
                <input class="style-button" type="text" name="fav" id="pseudo" placeholder="Sport Favoris"/>
                <input class="style-button" type="text" name="email" id="pseudo" placeholder="Mail"/>
                <input class="style-button" type="text" name="password" id="pseudo" placeholder="Mot de passe"/>
