@@ -19,7 +19,7 @@ require_once "connexion_db.php";
    <div class="page-full">
       <div class="content-page">
          <h1><span>my</span>Sport</h1>
-         <form class="form-loginPage-style" method="post" action="doadd_user.php">
+         <form class="form-loginPage-style" method="post" action="doadd_user.php"> //ajout des champs User dans la bdd via la methode POST
             <p>
                <input class="style-button" type="text" name="name" id="pseudo" placeholder="Prénom"/>
                <input class="style-button" type="text" name="lastname" id="pseudo" placeholder="Nom"/>
