@@ -11,21 +11,22 @@ $add_post = "
 
 $stmt = $conn->prepare($add_post);
 $stmt->execute();
+$row = $stmt->fetchAll();
 ?>
 
 <div class="post-full wrapper-fil">
-<?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
+<?php foreach ($row as $article) :?>
    <div class="post wrapper-fil">
       <p class="post-name">BOB Matt</p><p class="post-date">10/02/2028</p>
-      <p class="post-article"><?=$row["content"]?></p>
+      <p class="post-article"><?=$article["content"]?></p>
       <ul class="ul-tools">
          <li>
-             <a href="edit.php?id=<?=$row["id"];?>">Editer</a>
+             <a href="edit.php?id=<?=$article["id"];?>">Editer</a>
          </li>
          <li>
-             <a href="dodelete_post.php?id=<?=$row["id"];?>">Supprimer</a>
+             <a href="dodelete_post.php?id=<?=$article["id"];?>">Supprimer</a>
          </li>
       </ul>
    </div>
 </div>
-<?php endwhile; ?>
+<?php endforeach; ?>

@@ -25,7 +25,7 @@ require_once "connexion_db.php";
                    <input class="input-article-create" type="text" name="content" id="pseudo" placeholder="Quoi de neuf ?"/><br />
                </div>
                <div class="element-input-article">
-                   <button for="pseudo" class="button-article-create" type="input" name="submit">Publier</button>
+                   <button name="pseudo" class="button-article-create" type="input" type="submit">Publier</button>
                </div>
            </form>
            <hr>
