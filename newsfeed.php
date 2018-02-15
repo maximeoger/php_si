@@ -23,9 +23,7 @@ $stmt->execute();
              <a href="edit.php?id=<?=$row["id"];?>">Editer</a>
          </li>
          <li>
-             <form action="dodelete_post.php">
-                 <button class="post-tools" type="submit">Supprimer</button>
-             </form>
+             <a href="dodelete_post.php?id=<?=$row["id"];?>">Supprimer</a>
          </li>
       </ul>
    </div>
