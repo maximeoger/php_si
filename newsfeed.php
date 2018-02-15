@@ -18,7 +18,7 @@ WHERE
 id = :id
 ;";
 
-if (isset($_SESSION['id'])){
+if (isset($_GET['id'])){
     header('Location:index.php');
     exit;
 };
@@ -28,15 +28,15 @@ if (isset($_SESSION['id'])){
 
 <?php foreach ($row as $article):?>
    <div class="post wrapper-fil">
-      <p class="post-name"> BOB Matt</p><p class="post-date">10/02/2028</p>
+      <p class="post-name"> Johan <span class="light">Laurot</span></p><p class="post-date">10/02/2028</p>
       <p class="post-article"><?=$article["content"];?></p>
 
       <ul class="ul-tools">
          <li>
-             <a href="edit.php?id=<?=$article["id"];?>">Editer</a>
+             <a class="link-ul-tools" href="edit.php?id=<?=$article["id"];?>">Editer</a>
          </li>
          <li>
-             <a href="dodelete_post.php?id=<?=$article["id"];?>">Supprimer</a>
+             <a class="link-ul-tools" href="dodelete_post.php?id=<?=$article["id"];?>">Supprimer</a>
          </li>
       </ul>
 

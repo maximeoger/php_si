@@ -113,10 +113,8 @@ nav {
 .post {
    border-radius: 5px;
    background-color: #FAFAFA;
-   height: 180px;
-   margin: 30px auto;
    padding-top: 30px;
-   position: relative;
+   margin-top: 30px;
 }
 
 .post-full {
@@ -130,7 +128,7 @@ nav {
    line-height: 20px;
    color: black;
    font-family: 'Roboto', sans-serif; font-weight: 300;
-   padding: 15px 40px;
+   padding: 15px 40px 30px;
    box-sizing: border-box;
 }
 
@@ -151,9 +149,16 @@ nav {
 
 .ul-tools {
    padding-left: 40px;
-   position: absolute;
-   bottom: 0;
    padding-bottom: 30px;
+   color: grey;
+}
+
+.link-ul-tools {
+   color: grey;
+}
+
+.link-ul-tools:hover {
+   color: black;
 }
 
 
@@ -198,4 +203,8 @@ h2 {
    background-color: green;
    color: white;
 
+}
+
+.link-right {
+   padding-right: 30px;
 }
