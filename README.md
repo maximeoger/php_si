@@ -17,7 +17,7 @@ MySPORT est un réseau social fictif permettant de mettre des sportifs amateurs 
 
 ### schéma techniques
 
-
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 ##Choix techniques
 
