@@ -1,7 +1,8 @@
 <?php
-require_once "connexion_db.php";
 
+require_once "connexion_db.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +23,16 @@ require_once "connexion_db.php";
            <h2>Bienvenue !</h2>
            <form method="post" action="doadd_post.php">
                <div class="input-create">
-                   <input class="input-article-create" type="text" name="content" id="pseudo" placeholder="Quoi de neuf ?"/><br />
+                   <input class="input-article-create" type="text" name="content" placeholder="Quoi de neuf ?"/><br />
                </div>
                <div class="element-input-article">
-                   <button name="pseudo" class="button-article-create" type="input" type="submit">Publier</button>
+                   <input type="submit" class="button-article-create" value="Publier">
                </div>
            </form>
            <hr>
        </section>
 
       <?php include('newsfeed.php'); ?>
+
 </body>
 </html>  

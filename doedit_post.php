@@ -9,7 +9,7 @@
 echo"do_edit";
 //var_dump($_POST['id']);
 
-if( empty($_POST['edit']) && !isset($_POST['id']) ){
+if( empty($_POST_['edit']) && !isset($_POST['id']) ){
     header('Location: edit.php?nopostdataedit');
     exit;
 }
@@ -28,7 +28,7 @@ id = :id
 
 $stmt = $conn->prepare($edit_query);
 $stmt->bindValue(':content', $_POST['content']);
-$stmt->bindValue(':id', $_POST["id"]);
+$stmt->bindValue(':id', $_POST['id']);
 $stmt->execute();
 
 header('Location: index.php');
