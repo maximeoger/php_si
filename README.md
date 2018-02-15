@@ -28,10 +28,3 @@ Les informations renseigné par l'utilisateur sont stockées dans la base de don
 * Langage -> Php 7.2
 Le site est rendu dynamique, il execute les scripts afin de générer des documents HTML et de les renvoyer à l'utilisateur
 * extension PDO -> extension qui permet d'accéder à la base de données vie des requettes SQL
-
-## Comment ça marche?
-
-Quand un script PHP est appelé, il passe par le serveur Web (ici Apache). Si l'extension du fichier correspond à ce que l'on a défini comme étant
-l'extension PHP, le serveur demande à l'interpréteur PHP d'exécuter le code PHP contenu dans le fichier. L'exécution de ce code PHP entrainera
-éventuellement un échange d'informations avec la base de données. Au final, c'est une page HTML (avec éventuellement du Javascript) qui est retourné
-par le script PHP et renvoyé au serveur web (Apache). Le résultat est émis vers le navigateur. FIN du parcours.
