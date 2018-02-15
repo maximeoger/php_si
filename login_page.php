@@ -17,11 +17,11 @@ require_once "connexion_db.php";
 <body>
    <div class="page-full">
       <div class="content-page">
-         <h1><span>Logo</span>Sport</h1>
+         <h1><span>my</span>Sport</h1>
          <form class="form-loginPage-style" method="post" action="login.php">
             <p>
                <input class="style-button" type="text" name="pseudo" id="pseudo" placeholder="Identifiant"/>
-               <input class="style-button" type="text" name="pseudo" id="pseudo" placeholder="Password"/>
+               <input class="style-button" type="password" name="pseudo" id="pseudo" placeholder="Password"/>
                <button class="style-button valid-color-button" type="button" name="button">Connexion</button>
             </p>
          </form>

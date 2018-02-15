@@ -5,7 +5,7 @@ require_once "connexion_db.php";
 if (empty($_POST['content']) )
 {
 
-    var_dump($_POST['content']);
+    header('Location: index.php?nopostdata');
     exit;
 
 }

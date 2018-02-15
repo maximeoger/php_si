@@ -21,6 +21,7 @@ hr {background-color: #A9A9A9; height: 1px; border: 0px;}
 .wrapper {
    width: 1000px;
    margin: 0 auto;
+
 }
 
 .wrapper-fil {
@@ -87,7 +88,7 @@ nav {
 .post-content {
    color: #111213;
    font-size: 25px;
-   padding-top: 150px;
+   padding-top: 110px;
    position: relative;
 }
 .element-input-article {
@@ -113,8 +114,9 @@ nav {
    border-radius: 5px;
    background-color: #FAFAFA;
    height: 180px;
-   margin: 30px 0px;
+   margin: 30px auto;
    padding-top: 30px;
+   position: relative;
 }
 
 .post-full {
@@ -145,4 +147,8 @@ nav {
 }
 .post-tools:hover{
    color: black;
+}
+
+.ul-tools {
+   padding-left: 40px;
 }

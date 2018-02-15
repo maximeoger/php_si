@@ -3,7 +3,7 @@
 require_once "connexion_db.php";
 $requete = "SELECT
 `name`,
-`LASTNAME`
+`lastname`
 FROM
 `users`
 WHERE
@@ -20,7 +20,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
       <p class="logo"><span class="light">My</span>Sport</p>
       <input class="style-button-search" type="text" name="pseudo" id="pseudo" placeholder="Search"/>
       <div class="nav-right-content">
-         <strong><span class="light">Bonjour</span> <?=$row['name'].' '.$row['LASTNAME']?> </strong>
+         <strong><span class="light">Bonjour</span> <?=$row['name'].' '.$row['lastname']?> </strong>
       </div>
    </nav>
 </header>

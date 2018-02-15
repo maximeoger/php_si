@@ -17,15 +17,15 @@ require_once "connexion_db.php";
 <body>
    <div class="page-full">
       <div class="content-page">
-         <h1><span>Logo</span>Sport</h1>
+         <h1><span>my</span>Sport</h1>
          <form class="form-loginPage-style" method="post" action="doadd_user.php">
             <p>
                <input class="style-button" type="text" name="name" id="pseudo" placeholder="Prénom"/>
                <input class="style-button" type="text" name="lastname" id="pseudo" placeholder="Nom"/>
-               <input class="style-button" type="text" name="birthdate" id="pseudo" placeholder="YY/MM/DD"/>
+               <input class="style-button" type="date" name="birthdate" id="pseudo" placeholder="YY/MM/DD"/>
                <input class="style-button" type="text" name="fav" id="pseudo" placeholder="Sport Favoris"/>
-               <input class="style-button" type="text" name="email" id="pseudo" placeholder="Mail"/>
-               <input class="style-button" type="text" name="password" id="pseudo" placeholder="Mot de passe"/>
+               <input class="style-button" type="email" name="email" id="pseudo" placeholder="Mail"/>
+               <input class="style-button" type="password" name="password" id="pseudo" placeholder="Mot de passe"/>
                <a href="index.php"><button class="style-button valid-color-button" type="submit" name="button">Confirmer</button></a>
             </p>
          </form>
