@@ -26,8 +26,8 @@ Le site est héberger en local via le serveur Apache2.
 * Base de données -> MySQL 5.7
 Les informations renseigné par l'utilisateur sont stockées dans la base de données.
 * Langage -> Php 7.2
-Le site est rendu dynamique, il execute les scripts afin de générer des documents HTML et de les renvoyer à l'utilisateur.
-* extension PDO ->
+Le site est rendu dynamique, il execute les scripts afin de générer des documents HTML et de les renvoyer à l'utilisateur
+* extension PDO -> extension qui permet d'accéder à la base de données vie des requettes SQL
 
 ## Comment ça marche?
 
