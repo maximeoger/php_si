@@ -29,8 +29,6 @@ $requette = " INSERT INTO `users`
 
 
 
-
-
 $stmt = $conn->prepare($requette);
 $stmt->bindValue(':nom', $_POST['name']);
 $stmt->bindValue(':lastname', $_POST['lastname']);
@@ -40,6 +38,4 @@ $stmt->bindValue(':email', $_POST['email']);
 $stmt->bindValue(':password', $_POST['password']);
 $stmt->execute();
 
-
-
-header('Location: index.php?id='.$conn->lastInsertId());
+header('Location: index.php');

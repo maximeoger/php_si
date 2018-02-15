@@ -13,9 +13,9 @@ if (empty($_POST['content']) )
 $post_query = " 
   INSERT INTO 
     `post`
-  (`id`, `content`) 
+  (`content`) 
   VALUES 
-  (NULL, :content)
+  (:content)
   ;";
 
 $stmt = $conn->prepare($post_query);

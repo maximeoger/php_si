@@ -9,7 +9,7 @@
 echo"do_edit";
 //var_dump($_POST['id']);
 
-if( empty($POST_['edit']) && !isset($_POST['id']) ){
+if( empty($_POST_['edit']) && !isset($_POST['id']) ){
     header('Location: edit.php?nopostdataedit');
     exit;
 }
